@@ -23,12 +23,14 @@ const ThoughtForm = () => {
       console.warn("First thought insertion by user!")
     }
 
-    // update thought array's cache
-    const { thoughts } = cache.readQuery({ query: QUERY_THOUGHTS });
-    cache.writeQuery({
-      query: QUERY_THOUGHTS,
-      data: { thoughts: [addThought, ...thoughts] },
-    });
+    // window.location.reload();
+
+    // // update thought array's cache
+    // const { thoughts } = cache.readQuery({ query: QUERY_THOUGHTS });
+    // cache.writeQuery({
+    //   query: QUERY_THOUGHTS,
+    //   data: { thoughts: [addThought, ...thoughts] },
+    // });
   }
 })
 
